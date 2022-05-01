@@ -16,6 +16,8 @@ a {
   position: relative;
   max-width: 2560px;
   margin: 0 auto;
+  /* For testing */
+  min-height: 150vh;
 }
 
 .wrapper {
@@ -23,38 +25,4 @@ a {
   max-width: 980px;
   position: relative;
   padding: 0 20px;
-}
-
-.navigation-bar__container {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  padding: 20px 50px 10px; 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.navigation-bar__indicator { 
-  content: '';
-  width: 0;
-  height: 1px;
-  bottom: -1px;
-  position: absolute;
-  background-color: #000;
-  transition: all 1s ease;
-}
-
-.navigation-bar__link {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  color: #000;
-  opacity: 0.3;
-  font-size: 1em;
-}
-
-.navigation-bar__link:hover {
-  color: #06c;
-  opacity: 1;
-}
-
-.navigation-bar__link--active {
-  opacity: 1;
 }

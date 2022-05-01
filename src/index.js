@@ -4,7 +4,7 @@
  *  @Author: Jonathan Dean Damiani
  *  @Version:  1.0.0
  *
- *  @summary: Main class for application.
+ *  @summary: Main class for application. Initialize the entery application
  */
 'use strict';
 import App from './app.js';
