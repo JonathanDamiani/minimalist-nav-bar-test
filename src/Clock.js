@@ -31,6 +31,9 @@ export default class Clock {
   render () {
     setInterval(() => {
       const el = document.querySelector(this.refSelector);
+      if (el == undefined) {
+        return
+      }
       const currentTimeZone = el.getAttribute(this.refDataForTimezone);
       const currentTime = new Date().toLocaleTimeString("en-US", {timeZone: currentTimeZone})
       this.clockElement.innerText = currentTime

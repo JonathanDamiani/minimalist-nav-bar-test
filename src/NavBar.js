@@ -122,5 +122,14 @@ export default class NavBar {
 
     this.setActiveLink(undefined)
     this.setIndicatorLocationAndSize(undefined)
+
+    const activeLinkEl = document.querySelector(`.${this.baseClass}__link--active`);
+  
+    if (activeLinkEl == undefined) {
+      const firstEl =  navBar.querySelector(`.${this.baseClass}__link`);
+      window.location = firstEl.href
+      this.setActiveLink(undefined)
+      this.setIndicatorLocationAndSize(undefined)
+    }
   }
 } 
